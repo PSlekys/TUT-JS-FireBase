@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hotel Review System</title>
+
+    <link rel="stylesheet" href="normalize.min.css" />
+    <link rel="stylesheet" href="milligram.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="signup">
+    <header>
+      <div class="wrapper">
+        <h1>Hotel Review</h1>
+        <nav>
+          <a href="">Sign Up</a>
+          <a href="">Sign In</a>
+          <a href="">Write a Review</a>
+          <a href="">Sign Out</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="block">
+          <h2>Sign Up!</h2>
+          <div class="error"></div>
+          <form id="sign-up-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="6"
+              required
+            />
+
+            <label for="rpassword">Repeat Password</label>
+            <input
+              type="password"
+              id="rpassword"
+              name="rpassword"
+              minlength="6"
+              required
+            />
+
+            <input type="submit" value="Sign Up" />
+            <input type="reset" class="button-outline" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Copyright &copy; 2019
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+    <script src="config.js"></script>
+    <script src="signup.js"></script>
+  </body>
+</html>

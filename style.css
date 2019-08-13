@@ -1,0 +1,75 @@
+body#signup,
+body#signin {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background: rgb(33, 0, 109);
+}
+
+.wrapper {
+  width: 960px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  padding: 5px 0;
+  font-size: 1.8em;
+}
+
+header a {
+  color: white;
+  margin-right: 15px;
+}
+
+header a:last-child {
+  margin-right: 0;
+}
+
+.block {
+  width: 50%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.block form,
+.block input[type="submit"],
+.block input[type="reset"] {
+  margin-bottom: 0;
+}
+
+.error {
+  background: rgb(216, 57, 57);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.comment {
+  background: turquoise;
+  padding: 20px 10px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.6);
+}
