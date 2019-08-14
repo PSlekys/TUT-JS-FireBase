@@ -65,6 +65,14 @@ header a:last-child {
   color: white;
   border-radius: 10px;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.comment::after {
+  content: "x";
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
 footer {
